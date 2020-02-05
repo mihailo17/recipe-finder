@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    color: chocolate;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.button-svg {
+    height: 25px;
+    width: 25px;
+}
+
+input,
+button {
+    border: 1px solid chocolate;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0;
+}
