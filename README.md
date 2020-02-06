@@ -1,0 +1,1 @@
+Recipe(meals) finder app for practice of using external api's with fetch and higher order array methods(map()). Just a keyword search and random meal functionality for now, but might expand on it later.

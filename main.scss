@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1200px;
+    min-height: 100vh;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.button-svg {
+    width: 25px;
+    height: 25px;
+}
+form {
+    display: inline-block;
+}
+form input {
+    height: 34px;
+    vertical-align: bottom;
+}
+
+#recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipe{
+   display: inline-block; 
+   width: 33%;
+   margin-bottom: 1%;
+   cursor: pointer;
+   position: relative;
+}
+
+.recipe img{
+    width: 100%;
+    height: 100%;
+}
+.recipe-info{
+    position: absolute;
+    display:flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in 0.15s;
+    background-color: rgba(0,0,0,0.6);
+}
+.recipe-info h3{
+    color: #fff;
+}
+
+.recipe:hover .recipe-info{
+    opacity: 1;
+}
