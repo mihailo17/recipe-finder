@@ -40,7 +40,7 @@ function searchRecipes(e) {
           //Using high order array function => map() to loop through all the meals
     
           recipes.innerHTML = data.meals.map(meal=>
-            `<div class="recipe">
+            `<div class="recipe z-depth-4">
               <img src="${meal.strMealThumb}" alt="${meal.strMeal}"/>
               <div class="recipe-info" data-meal-id="${meal.idMeal}"> 
                 <h3>${meal.strMeal}</h3>

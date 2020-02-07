@@ -6,20 +6,15 @@ html{
     scroll-behavior: smooth;
 }
 .container {
-    max-width: 1200px;
-    min-height: 100vh;
-    padding: 50px;
-    margin: auto;
-    text-align: center;
     background: #FF512F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    background: -webkit-linear-gradient(to bottom, #F09819, #ff512f82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F09819, #ff512f82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
 }
 .button-svg {
     width: 25px;
     height: 25px;
+    vertical-align: middle;
 }
 form {
     display: inline-block;
@@ -32,13 +27,14 @@ form input {
 #recipes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .recipe{
    display: inline-block; 
-   width: 33%;
-   margin-bottom: 1%;
+   width: 30%;
+   margin-bottom: 3%;
+   max-height: 300px;
    cursor: pointer;
    position: relative;
 }
@@ -66,4 +62,9 @@ form input {
 
 .recipe:hover .recipe-info{
     opacity: 1;
+}
+
+#one-recipe img{
+    height: 350px;
+    width: 350px;
 }

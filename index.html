@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Recipe finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container center-align">
       <h1>Recipe finder</h1>
       <div class="main-content flex">
         <form class="flex" id="form">
           <input id="search" type="text" placeholder="search" />
-          <button id="search-submit" type="submit" class="search-button button">
+          <button id="search-submit" type="submit" class="search-button button waves-effect waves-light btn">
             <img class="button-svg" src="/img/search-icon.svg" alt="" />
           </button>
         </form>
-        <button id="random" class="random-button button">
+        <button id="random" class="random-button button waves-effect waves-light btn">
           <img class="button-svg" src="/img/random-icon.svg" alt="" />
         </button>
       </div>
@@ -27,6 +29,8 @@
         <div id="one-recipe"></div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script src="main.js"></script>
   </body>
 </html>
