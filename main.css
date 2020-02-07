@@ -1,20 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   background: #FF512F;
+<<<<<<< HEAD
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, left bottom, from(#F09819), to(#ff512f82));
   background: linear-gradient(to bottom, #F09819, #ff512f82);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 100vh;
+=======
+  background: -webkit-gradient(linear, left top, left bottom, from(#F09819), to(#FF512F));
+  background: linear-gradient(to bottom, #F09819, #FF512F);
+>>>>>>> 1be8d3261e01c26f19e5c703e048f1dac28a9601
 }
 
 .button-svg {
@@ -30,6 +46,7 @@ form {
 form input {
   height: 34px;
   vertical-align: bottom;
+  padding-left: 10px;
 }
 
 #recipes {
